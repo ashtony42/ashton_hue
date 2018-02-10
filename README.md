@@ -12,4 +12,4 @@ To reset to white:
 Easy way to tell if you should take that morning commute to work or not.
 (Requires google maps API key in config)
 
-```bundle exec ruby should_i_drive_to_work.rb````
+```bundle exec ruby should_i_drive_to_work.rb```
