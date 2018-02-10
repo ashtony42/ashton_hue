@@ -12,9 +12,12 @@ time_to_get_to_work = distance_data['rows'][0]['elements'][0]['duration']['text'
 color = nil
 if time_to_get_to_work < 30
   color = 'green'
+  puts "Get out there bro! It should only take #{time_to_get_to_work} minutes!"
 elsif time_to_get_to_work < 45
   color = 'yellow'
+  puts "Eh, it may take a while longer, but still worth it, might take about #{time_to_get_to_work} minutes."
 else color = 'red'
+  puts "Dude, just stay home, it's not worth the #{time_to_get_to_work} minute drive."
 end
 
 @lamps.each do |lamp|
