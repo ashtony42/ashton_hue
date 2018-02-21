@@ -25,7 +25,7 @@ def time_to_get_to_work
 end
 
 scheduler = Rufus::Scheduler.new
-scheduler.cron '30,40,50 7,8 1,2,3,4,5 * *' do  # check at 7:30/7:40/7:50 every weekday
+scheduler.cron '30,40,50 7,8 * * 1,2,3,4,5' do  # check at 7:30/7:40/7:50 every weekday
   begin
     if Time.now.hour == 8
       LAMP.is_on = false #Turn itself off at 8:30
