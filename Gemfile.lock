@@ -5,6 +5,8 @@ GEM
     bunny (2.9.1)
       amq-protocol (~> 2.3.0)
     coderay (1.1.2)
+    et-orbi (1.0.9)
+      tzinfo
     faraday (0.12.2)
       multipart-post (>= 1.2, < 3)
     json (2.1.0)
@@ -13,10 +15,17 @@ GEM
     pry (0.11.3)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
+    rufus-scheduler (3.4.2)
+      et-orbi (~> 1.0)
     test_driven_lighting (1.2.0)
       bunny (~> 2.7)
       faraday (~> 0.12.2)
       json (~> 2.1)
+    thread_safe (0.3.6)
+    tzinfo (1.2.5)
+      thread_safe (~> 0.1)
+    tzinfo-data (1.2018.3)
+      tzinfo (>= 1.0.0)
 
 PLATFORMS
   ruby
@@ -24,7 +33,9 @@ PLATFORMS
 
 DEPENDENCIES
   pry
+  rufus-scheduler
   test_driven_lighting
+  tzinfo-data
 
 BUNDLED WITH
    1.16.1
